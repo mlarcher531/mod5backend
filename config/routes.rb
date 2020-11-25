@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :spells
       resources :goals
       resources :auths
+      resources :items
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end
