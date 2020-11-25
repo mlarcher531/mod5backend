@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :characters
       resources :spells
       resources :goals
+      resources :auths
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end
